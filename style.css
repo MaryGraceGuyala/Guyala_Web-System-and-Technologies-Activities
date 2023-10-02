@@ -1,0 +1,114 @@
+body{
+    background-color:peachpuff;
+}
+header{
+    background-color: black;
+    color:aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-color: aquamarine;
+    text-shadow: powderblue;
+    -webkit-text-stroke-color: darksalmon;
+    border: 2px;
+    border-color: white;
+    border-style: hidden;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color:midnightblue;
+    border: purple;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 5px;
+    text-align: center;
+    text-shadow: antiquewhite;
+}
+footer{
+    border: dimgrey;
+    background-color: steelblue;
+    border-style: groove;
+    border-radius: 2px;
+    text-align: left;
+}
+h2{
+    -webkit-text-fill-color: lightseagreen;
+    -webkit-text-stroke:  black;  
+    -webkit-text-stroke-width: 1px;
+}
+ul li{
+    list-style-type: circle;
+    font-stretch: expanded;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+figure img{
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+figure figcaption{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: rgb(10, 131, 20);
+}
+p{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: black;
+    -webkit-text-fill-color: black 5px;
+    -webkit-text-stroke: white 1px;
+    text-transform: uppercase;
+    text-size-adjust:inherit;
+    direction: ltr;
+}
+table{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5px;
+    width: 100%;
+    border-color: firebrick;
+    border-style: solid;
+    border-width: 2px;
+    table-layout: auto;
+    column-count: 2;
+    column-gap: normal;
+}
+table th{
+    background-color:olive;
+    border-radius: 5px;
+    box-sizing: content-box;
+    box-shadow: midnightblue 3px;
+}
+details summary{
+    font: 1em sans-serif;
+    fill: aqua;
+}
+header li a{
+    border-radius: 1px;
+    background-color: peru;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:small;
+    margin-top: 5px;
+    float: right;
+    text-transform: uppercase;
+    transition: all;
+    touch-action: pinch-zoom;
+}
+div p{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    -webkit-text-stroke: black;
+}
+div h1{
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-fill-color: slateblue;
+    display: inline;
+    background-color: aliceblue;
+    border-style: groove;
+}
+meter{
+    width: 100%;
+    height: 20px;
+}
