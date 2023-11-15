@@ -83,18 +83,22 @@ table th{
 }
 details summary{
     font: 1em sans-serif;
-    fill: aqua;
+    fill: aqua; 
 }
-header li a{
-    border-radius: 1px;
-    background-color: peru;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:small;
-    margin-top: 5px;
-    float: right;
-    text-transform: uppercase;
-    transition: all;
-    touch-action: pinch-zoom;
+header  a{
+    box-shadow: 3px 4px 0px 0px #899599;
+    background:linear-gradient(to bottom, #009999 5%, #0099CC 100%);
+    background-color:#3a8a9e;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color:rgb(8, 8, 8);
+    font-family:'Times New Roman', Times, serif;
+    font-size:10px;
+    padding:7px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
 }
 div p{
     font-family:'Times New Roman', Times, serif;

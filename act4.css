@@ -1,0 +1,91 @@
+header a{
+    float: left;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background:linear-gradient(to bottom, #009999 5%, #0099CC 100%);
+    background-color:#3a8a9e;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-flex;
+    cursor:pointer;
+    color:rgb(8, 8, 8);
+    font-family:'Times New Roman', Times, serif;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+}
+body {
+    background-color:saddlebrown;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.container {
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.camel, .snake, .pascal, .proper {
+    margin-bottom: 30px;
+}
+
+.camel h2, .snake h2, .pascal h2, .proper h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: cursive;
+}
+
+.variable {
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(223, 185, 91);
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #d9d9d9;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style:normal;
+}
