@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(./poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-form {
+    background-color: #ffffff69;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+  }
+  
+  h2 {
+    color: #333333;
+  }
+  
+  .form-group-email,
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .form-group-email input,
+  .form-group input {
+    width: 100%;
+    padding: 15px; /* Increased padding for better input size */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 59px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .checked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+  }
+  
+  .checked input {
+    margin-right: 5px;
+  }
+  
+  .btn_login {
+    width: 100%;
+    padding: 15px; /* Increased padding for better button size */
+    box-sizing: border-box;
+    background-color: #067237;
+    color: #ffffff;
+    border: none;
+    border-radius: 59px;
+    cursor: pointer;
+  }
+  
+  .btn_login:hover {
+    background-color: #75859e;
+  }
+  
+  .psw {
+    justify-self: start;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+  }
+  
+  .or_divider {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px; /* Increased margin for better spacing */
+  }
+  
+  .btn_google,
+  .btn_facebook {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px; /* Adjusted margin for better spacing */
+  }
+  .btn_facebook button {
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    background-color: #4285f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 59px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .btn_google button{
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    color: #ffffff;
+    border: none;
+    background-color: rgb(163, 9, 9);
+    border-radius: 59px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+  }
+  .btn_google button:hover,
+  .btn_facebook button:hover {
+    background-color: #838ea0;
+  }
+  

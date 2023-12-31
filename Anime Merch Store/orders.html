@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script src="https://kit.fontawesome.com/dc788a575f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="orders.css">
+    <title>Anime Merch Store - Order Details</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Anime Merch Store</h1>
+            <p>Order Details</p>
+        </div>
+    </header>
+
+    <aside class="sidebar-navigations" onclick="toggleSidebar('side-navigation')">
+        <div class="menu-bar">
+            <ul>
+                <li class="nav-link">
+                    <a href="home.html" class="text nav-text">
+                        <i class='fa-solid fa-house'></i>
+                        <span>&nbsp; Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="products.html">
+                        <i class='fas fa-shopping-bag'></i>
+                        <span class="text nav-text">&nbsp; Products</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="orders.html">
+                        <i class='fa-regular fa-cart-shopping'></i>
+                        <span class="text nav-text">&nbsp; Orders</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="reviews.html">
+                        <i class="fas fa-comments"></i>
+                        <span class="text nav-text">&nbsp; Product Reviews</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="questions.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span>&nbsp; FAQs</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <i class="fa fa-info-circle"></i>
+                        <span>&nbsp; About</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section id="order-details">
+        <div class="container">
+            <h2>Order Summary</h2>
+            <br>
+
+            <div class="order-item">
+                <img src="Demon Slayer Hoodies.jpeg" alt="Product 1">
+                <div class="order-details">
+                    <h3>Anime-Demon Slayer Hoodie</h3>
+                    <p>Price: ₱299</p>
+                    <p>Quantity: 2</p>
+                </div>
+            </div>
+
+            <div class="order-item">
+                <img src="one-piece.jpg" alt="Product 2">
+                <div class="order-details">
+                    <h3>Anime-One Piece Tumbler</h3>
+                    <p>Price: ₱120</p>
+                    <p>Quantity: 1</p>
+                </div>
+            </div>
+
+            <div class="order-summary">
+                <h2>Total: ₱718</h2>
+                <button>Place Order</button>
+            </div>
+        </div>
+    </section>
+    <section class="order-placed">
+        <h1>Order Placed</h1>
+
+        <div id="cart-items"></div>
+    <div id="subtotal"></div>
+    <div id="shipping-info"></div>
+    <div id="payment-info"></div>
+    <div id="order-summary"></div>
+    <div id="confirmation-message"></div>
+ 
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+    const cartItemsData = [
+        { product: "Naruto Hoodie", price: 299, quantity: 2 },
+        { product: "My Hero Academia Poster", price: 129, quantity: 1 },
+        { product: "Attack on Titan Keychain", price:25, quantity: 3 }
+    ];
+
+    const shippingInfoData = {
+        address: "123 Anime Street, Otaku City, A1B 2C3",
+        shippingMethod: "Standard Shipping",
+        estimatedDelivery: "Within 5-7 business days"
+    };
+
+    const paymentInfoData = {
+        method: "Credit Card",
+        cardNumber: "****** 1234"
+    };
+
+   
+    const cartItemsContainer = document.getElementById("cart-items");
+    cartItemsData.forEach(item => {
+        const itemElement = document.createElement("div");
+        itemElement.innerHTML = `<p><strong>${item.product}</strong> - ₱${item.price.toFixed(2)} x ${item.quantity}</p>`;
+        cartItemsContainer.appendChild(itemElement);
+    });
+
+    // Calculate and display subtotal
+    const subtotalContainer = document.getElementById("subtotal");
+    const subtotalAmount = cartItemsData.reduce((total, item) => total + item.price * item.quantity, 0);
+    subtotalContainer.innerHTML = `<p><strong>Subtotal:</strong> ₱${subtotalAmount.toFixed(2)}</p>`;
+
+    // Populate shipping information
+    const shippingInfoContainer = document.getElementById("shipping-info");
+    shippingInfoContainer.innerHTML = `
+        <p><strong>Address:</strong> ${shippingInfoData.address}</p>
+        <p><strong>Shipping Method:</strong> ${shippingInfoData.shippingMethod}</p>
+        <p><strong>Estimated Delivery:</strong> ${shippingInfoData.estimatedDelivery}</p>
+    `;
+
+
+    const paymentInfoContainer = document.getElementById("payment-info");
+    paymentInfoContainer.innerHTML = `
+        <p><strong>Payment Method:</strong> ${paymentInfoData.method} - ${paymentInfoData.cardNumber}</p>
+    `;
+
+    
+    const orderSummaryContainer = document.getElementById("order-summary");
+    const totalAmount = subtotalAmount;
+    orderSummaryContainer.innerHTML = `<p><strong>Total Amount:</strong> ₱${totalAmount.toFixed(2)}</p>`;
+
+  
+    const confirmationMessageContainer = document.getElementById("confirmation-message");
+    confirmationMessageContainer.innerHTML = `<p>Thank you for shopping with us! Your order has been successfully placed.</p>`;
+});
+
+    </script>
+</body>
+
+</html>

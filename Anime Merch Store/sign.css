@@ -1,0 +1,122 @@
+body, h1, h2, p, form, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(./animes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-form {
+    background-color: #3a3939b2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(248, 248, 248, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #c2bfbf;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 59px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  .form-group-email input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 59px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  
+  .btn_signup {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: medium;
+    border: none;
+    border-radius: 59px;
+    cursor: pointer;
+  }
+  
+  .btn_signup:hover {
+    background-color: #45a049;
+  }
+  
+  
+  span {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #a8a8a8;
+  }
+  
+  .or_divider {
+    text-align: center;
+    color: #b4b0b0;
+    margin-top: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .btn_google,
+  .btn_facebook {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn_google button,
+  .btn_facebook button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4285f4;
+    color: #ffffff;
+    font-size: medium;
+    border: none;
+    border-radius: 59px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .btn_google button{
+    background-color: rgb(190, 49, 49);
+  }
+  
+  .btn_google button:hover,
+  .btn_facebook button:hover {
+    background-color: #aec5eb;
+  }
+  

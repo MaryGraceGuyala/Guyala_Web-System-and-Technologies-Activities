@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <script src="https://kit.fontawesome.com/dc788a575f.js" crossorigin="anonymous"></script>
+    <title>Anime Merch Store - FAQ</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Anime Merch Store</h1>
+        <p>Frequently Asked Questions</p>
+        </div>
+    </header>
+    <aside class="sidebar-navigations" onclick="toggleSidebar('side-navigation')">
+        <div class="menu-bar">
+            <ul>
+                <li class="nav-link">
+                    <a href="home.html" class="text nav-text">
+                        <i class='fa-solid fa-house' ></i>
+                        <span>&nbsp; Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="products.html">
+                        <i class='fas fa-shopping-bag'></i>
+                        <span class="text nav-text">&nbsp; Products</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="orders.html">
+                        <i class='fa-regular fa-cart-shopping' ></i>
+                        <span class="text nav-text">&nbsp; Orders</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="reviews.html">
+                        <i class="fas fa-comments"></i>
+                        <span class="text nav-text">&nbsp; Product Reviews</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="questions.html">
+                        <i class="fas fa-question-circle"></i>
+                       <span>&nbsp; FAQs</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">
+                        <i class="fa fa-info-circle"></i>
+                        <span>&nbsp; About</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <section class="faq-section">
+        <article class="faq-item" onclick="toggleAnswer('order')">
+            <h2>How can I place an order?</h2>
+            <p id="order-answer" class="answer">You can place an order by selecting the desired items, adding them to your cart, and proceeding to checkout.</p>
+        </article>
+        <article class="faq-item" onclick="toggleAnswer('customize')">
+            <h2>Can I request for a customized design?</h2>
+            <p id="customize-answer" class="answer">Yes, we accept customized design of the products.</p>
+        </article>
+        <article class="faq-item" onclick="toggleAnswer('modify-cancel')">
+            <h2>Can I modify or cancel my order?</h2>
+            <p id="modify-cancel-answer" class="answer">Once an order is placed, it cannot be modified or canceled. Please review your order carefully before confirming the purchase.</p>
+        </article>
+
+        <article class="faq-item" onclick="toggleAnswer('shipping-options')">
+            <h2>What are the shipping options?</h2>
+            <p id="shipping-options-answer" class="answer">We offer standard and express shipping options. Shipping costs and delivery times may vary based on your location and selected shipping method.</p>
+        </article>
+
+        <article class="faq-item" onclick="toggleAnswer('track-order')">
+            <h2>How can I track my order?</h2>
+            <p id="track-order-answer" class="answer">Once your order is shipped, you will receive a tracking number via email. You can use this tracking number to monitor the status and location of your package.</p>
+        </article>
+
+        <article class="faq-item" onclick="toggleAnswer('return-policy')">
+            <h2>What is the return policy?</h2>
+            <p id="return-policy-answer" class="answer">Our return policy allows you to return items within 30 days of purchase. Please refer to our <a href="#returns">Returns Policy</a> for more details.</p>
+        </article>
+
+        <article class="faq-item" onclick="toggleAnswer('initiate-return')">
+            <h2>How do I initiate a return?</h2>
+            <p id="initiate-return-answer" class="answer">To initiate a return, contact our customer support at support@animemerchstore.com. Please provide your order number and reason for the return.</p>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
