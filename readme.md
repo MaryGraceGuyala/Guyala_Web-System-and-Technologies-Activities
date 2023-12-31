@@ -7,6 +7,7 @@
 - Activity 2: Link Activity 1
 - Activity 3: CSS Properties
 - Activity 4: Valid Variable Names
+- Final Project
 
 ##  -`♡´-📓📃˗ˏˋ ♡ ˎˊ˗Members
 - Barba, Melvin L.
